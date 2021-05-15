@@ -6,23 +6,24 @@ var tbody = d3.select("tbody");
 
 // Function to build a table to insert data from data.js.
 function buildTable(data) {
-    // First, clear out any existing data
-    tbody.html("");
-    // Next, loop through each object in the data
-    data.forEach((dataRow) => {
-        // Append a row to the table body
-        let row = tbody.append("tr");
+  // First, clear out any existing data
+  tbody.html(" "); 
+  // Next, loop through each object in the data
+  data.forEach((dataRow) => {
+      // Append a row to the table body
+      let row = tbody.append("tr");
 
-        // Loop through each field in the dataRow and
-        // Add each value as a table cell (td)
-        Object.values(dataRow).forEach((val) => {
-            let cell = row.append("td");
-            cell.text(val);
-            }
-        );
-    });
+      // Loop through each field in the dataRow and
+      // Add each value as a table cell (td)
+      Object.values(dataRow).forEach((val) => {
+          let cell = row.append("td");
+          cell.text(val);
+          }
+      );
+  });
 };
 
+// Use D3 to 'listen' for USER INPUTS
 function handleClick() {
   // Grab the datetime value from the filter
   let date = d3.select("#datetime").property("value");
@@ -33,7 +34,7 @@ function handleClick() {
   if (date) {
     // Apply `filter` to the table data to only keep the
     // rows where the `datetime` value matches the filter value
-    filteredData = filteredData.filter(row => row.datetime === date););
+    filteredData = filteredData.filter(row => row.datetime === date);
   };
 
   // Rebuild the table using the filtered data

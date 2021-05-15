@@ -16,7 +16,7 @@
     <!-- Link the style.css file in css folder -->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
     <!-- Set up body to store components -->
     <!-- Bootstrap "wrapper" functionality helps group elements (e.g. title, 
         paragraphs,table, filters) and specifies styling in stylesheet -->
@@ -24,7 +24,7 @@
         <!-- Navbar - component that fits across the top of the page.
             navbar-expand-lg: when viewing area is reduced from large to small
             navbar will collapse or resize -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <!-- Reset webpage after a filter has been applied to the table by
                 linking to the homepage. navbar-brand is built-in BS styling-->
           <a class="navbar-brand" href="index.html">UFO Sightings</a>          
@@ -50,16 +50,18 @@
                 <!-- Build filter -->
                 <div class="col-md-3">
                     <!-- HTML "form" element used for user input -->
-                    <form>
+                    <form class="bg-dark">
                         <p>Filter Search</p>
                         <!-- Create a set of list tags within an unordered list tag -->
-                        <ul class="list-group">
-                            <li class="list-group-item">
+                        <ul class="list-group bg-dark">
+                            <li class="list-group-item bg-dark">
                                 <label for="date">ENTER DATE</label>
                                 <input type="text" placeholder="1/10/2020" id="datetime" />     
                             </li>
-                            <li class="list-group-item">
-                                <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                            <li class="list-group bg-dark text-centered">
+                                <button id="filter-btn" type="button" class="btn btn-dark">
+                                    Filter Table
+                                </button>
                             </li>
                         </ul>
                     </form>
@@ -81,6 +83,11 @@
                     </table>             
                 </div>
             </div>
-        </div>  
+        </div> 
+    </div>         
+    <!-- Import Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
 </body>
 </html>
