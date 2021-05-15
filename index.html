@@ -55,13 +55,26 @@
                         <!-- Create a set of list tags within an unordered list tag -->
                         <ul class="list-group bg-dark">
                             <li class="list-group-item bg-dark">
+                                <!-- label for each search parameter -->
                                 <label for="date">Enter Date</label>
-                                <input type="text" placeholder="1/10/2020" id="datetime" />     
+                                <!-- input element that provides the input box -->
+                                <input type="text" placeholder="1/10/2020" id="datetime" class="form-control"/>     
                             </li>
-                            <li class="list-group bg-dark text-centered">
-                                <button id="filter-btn" type="button" class="btn btn-dark">
-                                    Filter Table
-                                </button>
+                            <li class="list-group-item bg-dark">
+                                <label for="city">Enter City</label>
+                                <input type="text" placeholder="pratt" id="city" class="form-control" />  
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="state">Enter State</label>
+                                <input type="text" placeholder="ks" id="state" class="form-control" />  
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="country">Enter County</label>
+                                <input type="text" placeholder="us" id="country" class="form-control" />  
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="shape">Enter Shape</label>
+                                <input type="text" placeholder="circle" id="shape" class="form-control" />  
                             </li>
                         </ul>
                     </form>
