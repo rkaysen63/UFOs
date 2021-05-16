@@ -1,8 +1,9 @@
 # UFOs
-JavaScript HTML Python 
+
 <p align="center">
   <img src="static/images/UFO_Homepage.png" width="1000">
 </p>
+
 
 ## Table of Contents
 * [Overview](https://github.com/rkaysen63/UFOs/blob/master/README.md#overview)
@@ -11,9 +12,7 @@ JavaScript HTML Python
 * [Summary](https://github.com/rkaysen63/UFOs/blob/master/README.md#summary)
 
 ## Overview:
-create web page to find a particular UFO sighting in the data set by the use of filters that could include one or more of the following: date, city, state, country, shape
-
-
+This project is the creation of a webpage that will allow the user to search for UFO sightings using one or more filters.  The filters include date of the sighting ("Date"), location of the sighting ("City", "State", and/or "Country") and the observed shape of the UFO ("Shape").  The dataset, data.js, includes UFO sightings data that include datetime, city, state, country, shape, durationMinutes, and comments held in a JavaScript object.
 
 ## Resources:
 
