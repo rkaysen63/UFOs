@@ -1,7 +1,7 @@
 # UFOs
 JavaScript HTML Python 
 <p align="center">
-  <img src="static/images/UFO_Homepage.png" width="800">
+  <img src="static/images/UFO_Homepage.png" width="1000">
 </p>
 
 ## Table of Contents
@@ -14,7 +14,7 @@ JavaScript HTML Python
 
 This project is a web-page designed to scrape data and images about "The Red Planet", Mars, from NASA and JPL at the click of a button.  The data is stored in a local database using MongoDB.
 
-## Resources
+## Resources:
 
 * UFO Sightings Data File: data.js
 * Jumbotron Background Image: nasa.jpg
@@ -27,9 +27,9 @@ This project is a web-page designed to scrape data and images about "The Red Pla
 
 ## Results:
 
-### 
+## Summary:
 
-<p align="center">
+<p align="left">
   <img src="static/images/UFO_Mobile.png" width="200">
 </p>
 
