@@ -27,22 +27,15 @@ This data visualization project is a webpage that will allow the user to search 
 
 ## Results:
 
-* Code files used to create webpage
+### Code files used to create webpage
 * style.css
-* This file provides additional Bootstrap CSS styling.
+  * This file provides additional Bootstrap CSS styling.
 * index.html
-* This file creates the basic webpage.
+  * This file creates the basic webpage.
 * data.js
-* This file is the data file to build the Table of UFO sightings.  It contains the variable "data" that is an array of key: value pairs
+  * This JavaScript file holds a variable containing an array [] of JavaScript objects {key: value pairs} that are the dataset that is used to build the Table of UFO sightings.
 * app.js
-* This file contains functions that can iterate through the rows of filtered data to create populate the data Table with values returned as a result of filtering.
-* 
-data.JS:  
-static/css/style.css - additional Bootstrap CSS styling
-index.html
-includes links to Bootstrap's content delivery network (CDN)
-app.js loops filters through functions
-
+  * This file contains functions that can iterate through the rows of filtered data to populate the data Table with values returned as a result of filtering.
 
 <p align="center">
   <img src="static/images/filter_placeholders.png" width="1000"><br/><br/>Filter Search  
@@ -77,17 +70,19 @@ The "Filter Search" allows the user to use one or more of the filters at a time.
         </ul>
 
 
-* To filter the data, enter text into one or more  the same format as shown by the placeholder example, i.e., date format m/dd/yyyy, lower case letters, two letter state code, etc.  For example, type in "fireball" in the "Shape" user input box, followed by "ca" in the "State" user input box.
-
-* The table reacts immediately.  First, after "fireball" is typed and entered in the "Shape" user box, all of the instances where "fireball" is observed is displayed. Then after "ca" is typed and entered in the "State" user box, only those instances where the "fireball" is observed in "ca" are displayed.
-
-<p align="centered">
+* To filter the data, enter text into one or more of the input boxes, or "Filter Search" boxes in the same format as shown by the placeholder example, i.e., date format m/dd/yyyy, lower case letters, two letter state code, etc.  For example, type in "fireball" in the "Shape" user input box, followed by "ca" in the "State" user input box.
+    
+<p align="center">
   <img src="static/images/filter_fireball.png" width="800"><br/><br/>Filter Search for "fireball"
 </p>
+    
 
-<p align="centered">
+* The table reacts immediately.  First, after "fireball" is typed and entered in the "Shape" user box, all of the instances where "fireball" is observed is displayed. Then after "ca" is typed and entered in the "State" user box, only those instances where the "fireball" is observed in "ca" are displayed.   
+      
+<p align="center">
   <img src="static/images/two_filters.png" width="800"><br/><br/>Filter Search for "fireball" and "ca"
 </p>
+    
 
    * The table reacts immediately upon the entry of the first filter because the event listener is looking for change.  
 
@@ -122,7 +117,7 @@ The "Filter Search" allows the user to use one or more of the filters at a time.
               filterTable();
             }
    
-   * The `updateFilters()` function calls the `filterTable()` function to filter the table based on the user input, i.e. filter(s).  The function takes the user input, loops through the tableData which is an array JavaScript objects and keeps only those objects where there is a match between key, value of the filters and key, value in the object.
+   * The `updateFilters()` function calls the `filterTable()` function to filter the table based on the user input, i.e. filter(s).  The function takes the user input, loops through the `tableData` which is an array JavaScript objects and keeps only those objects where there is a match between key, value of the filters and key, value in the object.
     
          function filterTable() {
 
@@ -139,7 +134,7 @@ The "Filter Search" allows the user to use one or more of the filters at a time.
            buildTable(filteredData); 
          };
    
-   * The `filterTable()` function calls the `buildTable()` function that builds the table per the filter(s).  In the example, the table is built using JavaScript objects containing the shape, "fireball", and as we'll see later, shape, "fireball", and state, "ca".
+   * The `filterTable()` function calls the `buildTable()` function that builds the table per the filter(s).  In the example, the table is built using JavaScript objects containing the shape, "fireball", and as we will see later, shape, "fireball", and state, "ca".
    
           function buildTable(data) {
             // First, clear out any existing data
@@ -164,7 +159,7 @@ The "Filter Search" allows the user to use one or more of the filters at a time.
 
 *  Due to the Bootstrap 4 grid system this webpage is responsive and can be viewed on smaller screens such as mobile devices.
 
-<p align="left">
+<p align="center">
   <img src="static/images/UFO_Mobile.png" width="200"><br/><br/>Mobile Ready!
 </p>
 
@@ -174,22 +169,12 @@ The "Filter Search" allows the user to use one or more of the filters at a time.
    * The placeholder text is light grey but is barely distinguishable from the input text.  For this reason, I added "e.g., " in front of each placeholder text so that it would be more apparent that it is an example rather than an actual filter.
    * If the input doesn't match for various reasons such as wrong case, or the input or combination of inputs does not exist, then an empty table is returned.  There's no additional guidance.  For this reason, I added, a message, "Try one filter.  Then refine search. Use lowercase letters."
 
+<p align="center">
+  <img src="static/images/no_results_message.png" width="200"><br/><br/>Mobile Ready!
+</p>
 
-
-2. Further development should consider including the following:
-   * Webscraping of other websites to expand the dataset.  The dataset is limited to sightings that occur in January of 2010.  It's difficult to come to any real conclusions on such a small number of incidences.
-   * An interactive map that 
-
-
-
-
-   
-   
-   
-
-
-
-
-
+2. The following recommendations for further development would require some effort but would greatly enhance this webpage.
+   * Consider pulling data from multiple websites either by web scraping and/or APIs.  The current dataset is limited to sightings that occur in January of 2010.  It's difficult to come to any real conclusions on such a small number of incidences.
+   * Consider adding a map that shows the location of each sighting with pop-up information boxes.  Not only would it add interest, it could also provide a visualization of the density of sightings in certain areas.
 
 [Back to the Table of Contents](https://github.com/rkaysen63/UFOs/blob/master/README.md#table-of-contents)
