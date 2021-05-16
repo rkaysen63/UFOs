@@ -9,7 +9,7 @@ function buildTable(data) {
   tbody.html("");
 
   if (Object.keys(data).length === 0) {
-    tbody.html("Try one filter.  Then refine search.");
+    tbody.html("Try one filter.  Then refine search. Use lowercase letters.");
     return;
   }
 
