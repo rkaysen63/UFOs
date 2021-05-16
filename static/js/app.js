@@ -82,7 +82,7 @@ function updateFilters() {
         filteredData = filteredData.filter(row => row[kee] === val);
       }
     });
-    // 
+
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData); 
     // Check to see if anything is in filteredData after filters entered.
