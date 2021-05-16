@@ -1,4 +1,4 @@
-# UFOs
+# "UFO Finder" Webpage
 
 <p align="center">
   <img src="static/images/UFO_Homepage.png" width="1000">
@@ -27,7 +27,7 @@ This data visualization project is a webpage that will allow the user to search 
 
 ## Results:
 
-### Code files used to create webpage
+### Code files used to create the "UFO Finder" webpage
 * style.css
   * This file provides additional Bootstrap CSS styling.
 * index.html
@@ -36,6 +36,8 @@ This data visualization project is a webpage that will allow the user to search 
   * This JavaScript file holds a variable containing an array [] of JavaScript objects {key: value pairs} that are the dataset that is used to build the Table of UFO sightings.
 * app.js
   * This file contains functions that can iterate through the rows of filtered data to populate the data Table with values returned as a result of filtering.
+
+### Filter Search
 
 <p align="center">
   <img src="static/images/filter_placeholders.png" width="1000"><br/><br/>Filter Search  
@@ -165,15 +167,17 @@ The "Filter Search" allows the user to use one or more of the filters at a time.
 
 ## Summary:
 
-1. Two drawbacks of this webpage were easily remedied.
-   * The placeholder text is light grey but is barely distinguishable from the input text.  For this reason, I added "e.g., " in front of each placeholder text so that it would be more apparent that it is an example rather than an actual filter.
+### Drawbacks:
+Two drawbacks of this webpage were easily remedied.
+   * The placeholder text is light grey but is barely distinguishable from the input text.  For this reason, "e.g., " was added in front of each placeholder text so that it would be more apparent that it is an example rather than an actual filter.  The filtered text will be more readily recognizable because it won't have "e.g, " in front of it.
    * If the input doesn't match for various reasons such as wrong case, or the input or combination of inputs does not exist, then an empty table is returned.  There's no additional guidance.  For this reason, I added, a message, "Try one filter.  Then refine search. Use lowercase letters."
 
 <p align="center">
-  <img src="static/images/no_results_message.png" width="200"><br/><br/>Mobile Ready!
+  <img src="static/images/no_results_message.png" width="800"><br/><br/>Mobile Ready!
 </p>
 
-2. The following recommendations for further development would require some effort but would greatly enhance this webpage.
+### Recommendations:
+The following recommendations for further development would require some effort but would greatly enhance this webpage.
    * Consider pulling data from multiple websites either by web scraping and/or APIs.  The current dataset is limited to sightings that occur in January of 2010.  It's difficult to come to any real conclusions on such a small number of incidences.
    * Consider adding a map that shows the location of each sighting with pop-up information boxes.  Not only would it add interest, it could also provide a visualization of the density of sightings in certain areas.
 
