@@ -173,7 +173,7 @@ Two drawbacks of this webpage were easily remedied.
    * If the input doesn't match for various reasons such as wrong case, or the input or combination of inputs does not exist, then an empty table is returned.  There's no additional guidance.  For this reason, I added, a message, "Try one filter.  Then refine search. Use lowercase letters."
 
 <p align="center">
-  <img src="static/images/no_results_message.png" width="800"><br/><br/>Mobile Ready!
+  <img src="static/images/no_results_message.png" width="800"><br/><br/>Message Returned when Filters do not Yield Table Data
 </p>
 
 ### Recommendations:
