@@ -27,7 +27,6 @@ This project is a web-page designed to scrape data and images about "The Red Pla
 
 ## Results:
 
-## Summary:
 
 <p align="left">
   <img src="static/images/UFO_Mobile.png" width="200">
