@@ -8,6 +8,11 @@ function buildTable(data) {
   // First, clear out any existing data
   tbody.html("");
 
+  if (Object.keys(data).length === 0) {
+    tbody.html("Try one filter.  Then refine search.");
+    return;
+  }
+
   // Next, loop through each object in the data
   // and append a row and cells for each value in the row
   data.forEach((dataRow) => {
@@ -66,6 +71,7 @@ function updateFilters() {
     // 9. Loop through all of the filters and keep any data that matches the filter values
     // Object.entries() returns array of a given object's own enumerable string-keyed
     // property [key, value] pairs
+
     Object.entries(filters).forEach(function([kee, val]) {
       // if the value is not empty then filteredData = data set that matches filters
       if (val != "") {
@@ -80,7 +86,7 @@ function updateFilters() {
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData); 
     // Check to see if anything is in filteredData after filters entered.
-    console.log(filteredData);
+    console.log(filteredData); 
   };
   
   // 2. Attach an event to listen for changes to each filter
