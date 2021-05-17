@@ -12,7 +12,7 @@
 * [Summary](https://github.com/rkaysen63/UFOs/blob/master/README.md#summary)
 
 ## Overview:
-This data visualization project is a webpage that will allow the user to search for UFO sightings using one or more filters.  The filters include date of the sighting ("Date"), location of the sighting ("City", "State", and/or "Country") and the observed shape of the UFO ("Shape").  The dataset, data.js, includes UFO sightings data that include datetime, city, state, country, shape, durationMinutes, and comments held in a JavaScript object.  Users are encouraged to look through the data and come to their own conclusions about the existence of alien life.
+This data visualization project is a webpage that will allow the user to search for UFO sightings using one or more filters.  The filters include date of the sighting ("Date"), location of the sighting ("City", "State", and/or "Country") and the observed shape of the UFO ("Shape").  The UFO sightings data includes datetime, city, state, country, shape, durationMinutes, and comments that are held in a JavaScript object.  Users are encouraged to look through and filter the data displayed on the webpage and come to their own conclusions about the existence of alien life.
 
 ## Resources:
 
@@ -43,7 +43,7 @@ This data visualization project is a webpage that will allow the user to search 
   <img src="static/images/filter_placeholders.png" width="1000"><br/><br/>Filter Search  
 </p>
 
-The "Filter Search" allows the user to use one or more of the filters at a time.  The search will become more refined by the number of filters selected.  The "Filter Search" boxes contain placeholders when the webpage is opened that provide an example of the text to be entered into the user input box. In addition, the full table of data is displayed to the right of the "Filter Search" box so that the user may scroll through all of the data before refining a search.  The HTML code below shows the unordered list that holds the "Filter Search" user boxes. Under each list element is a label element `<label for="city">Enter City</label>` and an input element `<input type="text" placeholder="pratt" id="city" class="form-control" />`.  The JavaScript code will look for the `id` attribute within the input element and `class="form-control` identifies this element as a user-input form.  
+The "Filter Search" allows the user to use one or more of the filters at a time.  The search will become more refined by the number of filters selected.  The "Filter Search" boxes contain placeholders when the webpage is opened that provide an example of the text to be entered into the user input box. In addition, the full table of data is displayed to the right of the "Filter Search" box so that the user may scroll through all of the data before refining a search.  The HTML code below shows the unordered list that holds the "Filter Search" user boxes. Within each list `<li />` element is a label element `<label for="city">Enter City</label>` and an input element `<input type="text" placeholder="pratt" id="city" class="form-control" />`.  The JavaScript code will look for the `id` attribute within the input element. `class="form-control` identifies this element as a user-input form.  
           
         <!-- Create a set of list tags within an unordered list tag -->
         <ul class="list-group bg-dark">
