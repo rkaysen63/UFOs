@@ -72,14 +72,16 @@ The "Filter Search" allows the user to use one or more of the filters at a time.
         </ul>
 
 
-* To filter the data, enter text into one or more of the input boxes, or "Filter Search" boxes in the same format as shown by the placeholder example, i.e., date format m/dd/yyyy, lower case letters, two letter state code, etc.  For example, type in "fireball" in the "Shape" user input box, followed by "ca" in the "State" user input box.
+* To filter the data, enter text into one or more of the input boxes, or "Filter Search," boxes in the same format as shown by the placeholder.  The date format is m/dd/yyyy; Text is written lower case letters; Two-letter state codes are used rather than the full state name.  
+    
+  For example, type in "fireball" in the "Enter Shape" user input box, followed by "ca" in the "Enter State" user input box.
     
 <p align="center">
   <img src="static/images/filter_fireball.png" width="800"><br/><br/>Filter Search for "fireball"
 </p>
     
 
-* The table reacts immediately.  First, after "fireball" is typed and entered in the "Shape" user box, all of the instances where "fireball" is observed is displayed. Then after "ca" is typed and entered in the "State" user box, only those instances where the "fireball" is observed in "ca" are displayed.   
+* The table reacts immediately.  First, after "fireball" is typed and entered in the "Enter Shape" user box, all of the instances where "fireball" is observed is displayed. Then after "ca" is typed and entered in the "Enter State" user box, only those instances where "fireball" is observed in "ca" are displayed.   
       
 <p align="center">
   <img src="static/images/two_filters.png" width="800"><br/><br/>Filter Search for "fireball" and "ca"
